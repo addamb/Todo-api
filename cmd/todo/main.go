@@ -20,9 +20,7 @@ func main() {
 		port = fmt.Sprintf(":%s", defaultPort)
 	}
 
-	url := "postgresql://postgres:nomad@localhost:5432/todo?sslmode=disable"
-
-	db := db.NewPostgresConn(url)
+	db := db.NewPostgresConn()
 
 	//Check db connection
 	if err := db.Ping(); err != nil {

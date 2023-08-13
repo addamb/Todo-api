@@ -9,7 +9,8 @@
             "type": "go",
             "request": "launch",
             "mode": "auto",
-            "program": "${workspaceFolder}//cmd//todo//main.go"
+            "program": "${workspaceFolder}//cmd//todo//main.go",
+            "envFile": "${workspaceFolder}/.env",
         }
     ]
 }
